@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Berita dan Pengumuman</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/46e029689e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <!-- Navbar -->
+   <section id="nav">
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="depan.html">
+          <img src="./gambar/logo.png" alt="logo" width="90" height="45" />
+        </a>
+        <form  action="/berita.html" class="d-flex mx-auto">
+          <input id="search-input" class="form-control me-2" type="search" placeholder="Pencarian Layanan" aria-label="Pencarian Layanan" />
+          <button class="btn btn-outline-success" type="submit">Cari</button>
+        </form>
+        <div class="nav-icon">
+          <button class="btn btn-outline-secondary" type="button" onclick="showNotification()">
+            <i class="fas fa-bell"></i>
+            <div class="notification"></div>
+          </button>                    
+        </div>
+        <div class="dropdown">
+          <img
+            src="./gambar/profil.jpg"
+            width="50"
+            height="45"
+            alt="profil"
+            class="dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          />
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="index.html">Keluar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir navbar -->
+
+    <!-- Gambar Awal -->
+    <section id="banner">
+      <div class="container">
+        <img src="./gambar/banner3.png" alt="banner" width="1400" />
+      </div>
+    </section>
+    <!-- Akhir Gambar Awal -->
+
+    <style>
+      #teks {
+        padding-top: 15rem;
+      }
+      #teks strong {
+        font-size: 30px;
+      }
+      #teks p {
+        font-size: 20px;
+      }
+      #teks ul li {
+        font-size: 20px;
+      }
+    </style>
+
+    <!-- teks -->
+    <section id="teks">
+      <div class="container">
+        <p>
+          <strong>Visi</strong>
+        </p>
+        <p>Terwujudnya Masyarakat Kabupaten Tegal yang Sejahtera, Mandiri, Unggul, Berbudaya, dan Berakhlak Mulia</p>
+        <br />
+        <br />
+        <p>
+          <strong>Misi</strong>
+        </p>
+        <ul>
+          <li>Mewujudkan pemerintahan yang bersih, terbuka, akuntabel, dan efektif melayani rakyat</li>
+          <li>Memperkuat daya saing melalui pembangunan infrastruktur yang handal, berkualitas, dan terintegrasi serta berwawasan lingkungan</li>
+          <li>Membangun perekonomian rakyat yang kokoh, maju, berkeadilan, dan berkelanjutan</li>
+          <li>Meningkatkan kualitas sumberdaya manusia melalui penguatan layanan bidang pendidikan, kesehatan, dan sosial dengan memanfaatkan kemajuan ilmu pengetahuan dan teknologi</li>
+          <li>Menciptakan tata kehidupan masyarakat yang tertib, aman, tentram, dan nyaman dengan tetap menjaga dan melestarikan nilai-nilai budaya serta kearifan lokal</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

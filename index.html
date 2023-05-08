@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login - Layanan Masyarakat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form action="depan.html">
+        <div class="user-box">
+          <input type="email" name="email" required />
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required />
+          <label>Password</label>
+        </div>
+        <center>
+        <button type="submit">Login</button>
+      </form>
+      <p>Belum memiliki akun?</p>
+      <p><a href="daftar.html">Daftar disini!</a></p>
+    </center>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("./gambar/login.png");
+        background-size: cover; /* mengatur ukuran gambar agar selalu terisi seluruh area background */
+      }
+
+      .login-box {
+        width: 350px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        opacity: 0.8;
+        border-radius: 5%;
+      }
+
+      .login-box h2 {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .user-box {
+        position: relative;
+      }
+
+      .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #333333;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #999999;
+        outline: none;
+        background: transparent;
+      }
+
+      .user-box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        color: #676666;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+
+      .user-box input:focus ~ label,
+      .user-box input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #1b1b1b;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </body>
+</html>

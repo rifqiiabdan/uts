@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Berita dan Pengumuman</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/46e029689e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="nav">
+      <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="depan.html">
+            <img src="./gambar/logo.png" alt="logo" width="90" height="45" />
+          </a>
+          <form action="/berita.html" class="d-flex mx-auto">
+            <input id="search-input" class="form-control me-2" type="search" placeholder="Pencarian Layanan" aria-label="Pencarian Layanan" />
+            <button class="btn btn-outline-success" type="submit">Cari</button>
+          </form>
+          <div class="nav-icon">
+            <button class="btn btn-outline-secondary" type="button" onclick="showNotification()">
+              <i class="fas fa-bell"></i>
+              <div class="notification"></div>
+            </button>
+          </div>
+          <div class="dropdown">
+            <img src="./gambar/profil.jpg" width="50" height="45" alt="profil" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" />
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html">Keluar</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Akhir navbar -->
+      <style>
+        /* Style untuk form */
+        .container form {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f7f7f7;
+          border-radius: 5px;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .container form label {
+          display: block;
+          margin-bottom: 8px;
+        }
+
+        .container form input[type="text"],
+        .container form input[type="email"],
+        .container form select,
+        .container form textarea {
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          font-size: 16px;
+          font-family: inherit;
+          resize: none;
+        }
+
+        .container form input[type="submit"] {
+          background-color: #4caf50;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          padding: 12px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          font-family: inherit;
+        }
+
+        .container form input[type="submit"]:hover {
+          background-color: #3e8e41;
+        }
+
+        .container form input[type="submit"]:focus {
+          outline: none;
+        }
+
+        /* Style untuk error message */
+        .error {
+          color: red;
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+      </style>
+
+      <script>
+        function showNotification() {
+          var notification = document.querySelector(".notification");
+          notification.classList.add("show");
+          setTimeout(function () {
+            notification.classList.remove("show");
+          }, 2000); // durasi notifikasi
+        }
+      </script>
+
+      <!-- Main -->
+      <div class="container">
+        <br />
+        <br />
+        <center>
+          <h1>Form Permohonan Surat</h1>
+        </center>
+        <br />
+        <form action="#" method="post">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" /><br />
+
+          <label for="nik">NIK:</label>
+          <input type="text" id="nik" name="nik" /><br />
+
+          <label for="alamat">Alamat:</label>
+          <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br />
+
+          <label for="jenis_surat">Pilih Lokasi Pengambilan:</label>
+          <select id="jenis_surat" name="jenis_surat">
+            <option value="Surat Keterangan Domisili">Kantor Desa Mejasem</option>
+            <option value="Surat Keterangan Usaha">Kantor Desa Wangandawa</option>
+            <option value="Surat Keterangan Lainnya">Kantor Desa Bongkok</option></select
+          ><br />
+
+          <label for="keterangan">Keterangan:</label>
+          <textarea id="keterangan" name="keterangan" rows="4" cols="50"></textarea><br />
+
+          <input type="submit" value="Kirim" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
